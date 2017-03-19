@@ -8,8 +8,6 @@
 
 #import "RootViewController.h"
 
-#import "ViewAnimationsVC.h"
-
 typedef NSString* kDataSourceInfoKey;
 
 //数据源中值对应的key
@@ -34,7 +32,12 @@ kDataSourceInfoKey kDataSourceInfoKeyClassName = @"kDataSourceInfoKeyClassName";
     _dataArry = @[@{kDataSourceInfoKeyTitle:@"1.View Animations",
                     kDataSourceInfoKeyDetail:@"通过修改对应视图(UIView)的属性,可以实现一些最基础的动画效果.",
                     kDataSourceInfoKeyXibName:@"ViewAnimationsVC",
-                    kDataSourceInfoKeyClassName:@"ViewAnimationsVC"}];
+                    kDataSourceInfoKeyClassName:@"ViewAnimationsVC"},
+                  @{kDataSourceInfoKeyTitle:@"2.Layer Animations.",
+                    kDataSourceInfoKeyDetail:@"通过修改对应视图(Layer)的属性,可以实现一些最基础的动画效果.",
+                    kDataSourceInfoKeyXibName:@"LayerAnimationsVC",
+                    kDataSourceInfoKeyClassName:@"LayerAnimationsVC"}
+                  ];
 }
 
 - (void)didReceiveMemoryWarning {

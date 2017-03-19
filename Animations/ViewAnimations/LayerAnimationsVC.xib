@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LayerAnimationsVC">
+            <connections>
+                <outlet property="imageView" destination="ivK-l0-Uk5" id="HoQ-5s-vX6"/>
+                <outlet property="imageView2" destination="kzK-3y-YTH" id="qba-mr-sd9"/>
+                <outlet property="imageView3" destination="Xku-KX-u0j" id="cUl-Bc-sgC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walle.png" translatesAutoresizingMaskIntoConstraints="NO" id="ivK-l0-Uk5" userLabel="imageView">
+                    <rect key="frame" x="22" y="102" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="Kme-da-dSi"/>
+                        <constraint firstAttribute="height" constant="80" id="mWV-4g-aIe"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walle.png" translatesAutoresizingMaskIntoConstraints="NO" id="kzK-3y-YTH" userLabel="imageView">
+                    <rect key="frame" x="22" y="230" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="uJ6-ND-HAA"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4I9-y5-4JQ">
+                    <rect key="frame" x="22" y="192" width="134" height="30"/>
+                    <state key="normal" title="CASpringAnimation"/>
+                    <connections>
+                        <action selector="startSpringAnimation:" destination="-1" eventType="touchUpInside" id="PXp-nG-b1M"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Xku-KX-u0j" userLabel="imageView">
+                    <rect key="frame" x="22" y="398" width="80" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="d2d-ur-SnE"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdx-bg-Mkl">
+                    <rect key="frame" x="20" y="360" width="131" height="30"/>
+                    <state key="normal" title="CAAnimationGroup"/>
+                    <connections>
+                        <action selector="startGroupAnimation:" destination="-1" eventType="touchUpInside" id="jFW-1Y-vSY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Deh-Og-UJd">
+                    <rect key="frame" x="22" y="64" width="126" height="30"/>
+                    <state key="normal" title="CABasicAnimation"/>
+                    <connections>
+                        <action selector="startBaseAnimation:" destination="-1" eventType="touchUpInside" id="L6l-xj-Bx3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Deh-Og-UJd" firstAttribute="centerX" secondItem="pdx-bg-Mkl" secondAttribute="centerX" id="4x2-PE-kRp"/>
+                <constraint firstItem="Deh-Og-UJd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="6gd-ol-Nj2"/>
+                <constraint firstItem="ivK-l0-Uk5" firstAttribute="leading" secondItem="4I9-y5-4JQ" secondAttribute="leading" id="7gl-cq-ZGx"/>
+                <constraint firstItem="Xku-KX-u0j" firstAttribute="top" secondItem="pdx-bg-Mkl" secondAttribute="bottom" constant="8" symbolic="YES" id="BHz-p1-Vps"/>
+                <constraint firstItem="4I9-y5-4JQ" firstAttribute="leading" secondItem="kzK-3y-YTH" secondAttribute="leading" id="DN4-CT-Amm"/>
+                <constraint firstItem="kzK-3y-YTH" firstAttribute="trailing" secondItem="Xku-KX-u0j" secondAttribute="trailing" id="EnW-lg-LPr"/>
+                <constraint firstItem="pdx-bg-Mkl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="IMf-z7-Ovy"/>
+                <constraint firstItem="kzK-3y-YTH" firstAttribute="leading" secondItem="Xku-KX-u0j" secondAttribute="leading" id="Kkd-aL-2b2"/>
+                <constraint firstItem="ivK-l0-Uk5" firstAttribute="top" secondItem="Deh-Og-UJd" secondAttribute="bottom" constant="8" symbolic="YES" id="NSZ-4Z-VIv"/>
+                <constraint firstItem="Deh-Og-UJd" firstAttribute="leading" secondItem="ivK-l0-Uk5" secondAttribute="leading" id="RTJ-AM-wMv"/>
+                <constraint firstItem="4I9-y5-4JQ" firstAttribute="top" secondItem="ivK-l0-Uk5" secondAttribute="bottom" constant="10" id="U9u-l2-GRR"/>
+                <constraint firstItem="ivK-l0-Uk5" firstAttribute="trailing" secondItem="kzK-3y-YTH" secondAttribute="trailing" id="hAQ-Fu-P20"/>
+                <constraint firstItem="kzK-3y-YTH" firstAttribute="top" secondItem="4I9-y5-4JQ" secondAttribute="bottom" constant="8" symbolic="YES" id="iYY-fO-xIl"/>
+                <constraint firstItem="pdx-bg-Mkl" firstAttribute="top" secondItem="kzK-3y-YTH" secondAttribute="bottom" constant="50" id="tp0-uV-KVh"/>
+            </constraints>
+            <point key="canvasLocation" x="-38" y="-154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="timg.jpg" width="450" height="338"/>
+        <image name="walle.png" width="996" height="998"/>
+    </resources>
+</document>
